@@ -1,0 +1,5 @@
+tesseract
+tesseract-data-eng
+wl-clipboard
+grim
+slurp
