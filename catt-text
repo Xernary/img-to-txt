@@ -1,0 +1,13 @@
+#!/bin/bash
+
+path=$HOME"/"
+img="tesseract_temp_image.png"
+output="tesseract_temp_output"
+#catt
+grim -g "$(slurp -d)" - | wl-copy
+wl-paste > $path$img
+tesseract $path$img $path$output
+cat $path$output".txt" | wl-copy
+rm $path$img
+rm $path$output".txt"
+
